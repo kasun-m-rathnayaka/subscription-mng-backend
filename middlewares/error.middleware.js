@@ -1,6 +1,6 @@
-const errorMiddleware = (error, req, res, next) => {
+const errorMiddleware = (err, req, res, next) => {
     try {
-        let error = {...error}
+        let error = {...err}
         error.message = error.message || 'Something went wrong';
         console.error(error);
 

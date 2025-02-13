@@ -41,7 +41,7 @@ const subscriptionSchema = new mongoose.Schema({
         enum: ['active', 'canceled', 'trial'],
         default: 'active',
     },
-    startData: {
+    startDate: {
         type: Date,
         required: true,
         validate: {
